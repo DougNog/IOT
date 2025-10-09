@@ -1,0 +1,46 @@
+.vermelho{
+   border: 1.5px solid rgba(0, 0, 0, 0.813);
+   background-color: #e43e3e;
+   height: 40px;
+    width: 120px;
+}
+
+.verde{
+   border: 1.5px solid rgba(0, 0, 0, 0.813);
+   background-color: #02f84c;
+   height: 40px;
+    width: 120px;
+}
+
+#btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.bt{
+  border: 1.5px solid rgba(0, 0, 0, 0.813);
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.txt_btns{
+  text-align: center;
+}
+
+.txt_principal{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.comtainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
