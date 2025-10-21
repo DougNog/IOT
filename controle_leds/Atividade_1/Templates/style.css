@@ -1,0 +1,101 @@
+/* ===== Estilos Gerais ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px 10px;
+    background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+    color: #f0f0f0;
+}
+
+/* ===== Container dos LEDs ===== */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ===== Blocos dos LEDs ===== */
+.LED1, .LED2 {
+    border: 1px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 25px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+    background: linear-gradient(145deg, #222, #111);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.LED1:hover, .LED2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.8);
+}
+
+/* ===== Botões ===== */
+button {
+    border: 2px solid #000;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* ===== Botão Ligar ===== */
+.ligar {
+    background-color: #28a745;
+    box-shadow: 0 4px 0 #1d7432;
+}
+
+.ligar:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* ===== Botão Desligar ===== */
+.desligar {
+    background-color: #dc3545;
+    box-shadow: 0 4px 0 #921d27;
+}
+
+.desligar:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* ===== Indicador do LED (opcional) ===== */
+.status-led {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px auto;
+    background-color: #555;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status-led.on {
+    background-color: #0f0;
+    box-shadow: 0 0 20px #0f0;
+}
+
+.status-led.off {
+    background-color: #400;
+    box-shadow: 0 0 10px #f00 inset;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+    .LED1, .LED2 {
+        width: 90%;
+    }
+
+    button {
+        width: 80%;
+    }
+}
